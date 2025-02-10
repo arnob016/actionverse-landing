@@ -43,15 +43,18 @@ export function Header() {
           <Link href="/roadmap" className="text-sm text-gray-300 hover:text-white transition-colors">
             Roadmap
           </Link>
-          <Link href="#" className="text-sm text-gray-300 hover:text-white transition-colors">
+          <Link
+            href="mailto:support@action-tokens.com?subject=I%20need%20support%20with%20an%20Action%20Tokens%20Product"
+            className="text-sm text-gray-300 hover:text-white transition-colors"
+          >
             Support
           </Link>
         </nav>
         <TooltipButton
-                      variant="outline"
-                      className="gap-2 rounded-xl border-white/10 bg-white/5 hover:bg-white/10"
-                      tooltipText="Coming Soon"
-                    >  Launch WebApp
+          variant="outline"
+          className="gap-2 rounded-xl border-white/10 bg-white/5 hover:bg-white/10"
+          tooltipText="Coming Soon"
+        >  Launch WebApp
         </TooltipButton>
       </div>
     </header>
