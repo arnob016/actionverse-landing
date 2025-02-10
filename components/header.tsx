@@ -4,8 +4,8 @@ import { Button } from "@/components/ui/button"
 
 export function Header() {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50">
-      <div className="flex items-center justify-between px-6 py-4">
+    <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-sm duration-500 ease-in-out rounded-b-xl">
+      <div className="flex items-center justify-between px-6 py-2">
         <div className="flex items-center gap-2">
           <Link href="/" className="flex items-center gap-3">
             <Image
