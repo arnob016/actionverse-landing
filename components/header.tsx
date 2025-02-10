@@ -40,7 +40,7 @@ export function Header() {
           >
             Map
           </Link>
-          <Link href="#" className="text-sm text-gray-300 hover:text-white transition-colors">
+          <Link href="/roadmap" className="text-sm text-gray-300 hover:text-white transition-colors">
             Roadmap
           </Link>
           <Link href="#" className="text-sm text-gray-300 hover:text-white transition-colors">
