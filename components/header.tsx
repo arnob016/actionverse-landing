@@ -1,10 +1,10 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-
+import { TooltipButton } from "./TooltipButton"
 export function Header() {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-sm duration-500 ease-in-out rounded-b-xl">
+    <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-3xl duration-500 ease-in-out rounded-b-xl">
       <div className="flex items-center justify-between px-6 py-2">
         <div className="flex items-center gap-2">
           <Link href="/" className="flex items-center gap-3">
@@ -47,9 +47,12 @@ export function Header() {
             Support
           </Link>
         </nav>
-        <Button variant="secondary" className="bg-white text-black hover:bg-gray-100">
-          Launch WebApp
-        </Button>
+        <TooltipButton
+                      variant="outline"
+                      className="gap-2 rounded-xl border-white/10 bg-white/5 hover:bg-white/10"
+                      tooltipText="Coming Soon"
+                    >  Launch WebApp
+        </TooltipButton>
       </div>
     </header>
   )

@@ -10,7 +10,9 @@ export function Footer() {
             © 2025 Action Tokens, All rights reserved. Empowering positive actions through blockchain technology
           </p>
           <Button variant="link" className="text-white">
-            <Link href="/terms">Terms and Conditions</Link>
+            <Link href="/terms" className="text-gray-400 hover:text-white">
+              Terms & Conditions
+            </Link>
           </Button>
         </div>
       </div>

@@ -1,40 +1,48 @@
-"use client"
+"use client";
 
-import { useRef, type MouseEvent, type ReactNode } from "react"
+import { useRef, useEffect } from "react";
 
 interface SpotlightProps {
-  children: ReactNode
-  className?: string
+  children: React.ReactNode;
+  className?: string;
 }
 
 export function Spotlight({ children, className = "" }: SpotlightProps) {
-  const divRef = useRef<HTMLDivElement>(null)
+  const spotlightRef = useRef<HTMLDivElement>(null);
 
-  const handleMouseMove = (e: MouseEvent<HTMLDivElement>) => {
-    if (!divRef.current) return
-    const { left, top, width, height } = divRef.current.getBoundingClientRect()
-    const x = (e.clientX - left) / width
-    const y = (e.clientY - top) / height
-    divRef.current.style.setProperty("--mouse-x", `${x}`)
-    divRef.current.style.setProperty("--mouse-y", `${y}`)
-  }
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      if (!spotlightRef.current) return;
+      
+      const { left, top, width, height } = spotlightRef.current.getBoundingClientRect();
+      const x = (e.clientX - left) / width;
+      const y = (e.clientY - top) / height;
+
+      spotlightRef.current.style.setProperty("--mouse-x", `${x}`);
+      spotlightRef.current.style.setProperty("--mouse-y", `${y}`);
+    };
+
+    document.addEventListener("mousemove", handleMouseMove);
+    return () => document.removeEventListener("mousemove", handleMouseMove);
+  }, []);
 
   return (
-    <div ref={divRef} onMouseMove={handleMouseMove} className={`relative overflow-hidden min-h-screen ${className}`}>
-      <div
-        className="pointer-events-none absolute inset-0 z-30 transition-opacity duration-300"
-        style={{
-          background: `radial-gradient(
-            800px circle at 
-            calc(var(--mouse-x, 0.5) * 100%) 
-            calc(var(--mouse-y, 0.5) * 100%), 
-            rgba(255, 255, 255, 0.1), 
-            transparent 40%
-          )`,
-        }}
-      />
+    <div ref={spotlightRef} className={`relative overflow-hidden ${className}`}>
+      <div className="pointer-events-none absolute inset-0 z-30 transition-opacity duration-300 bg-transparent">
+        <div className="absolute inset-0" 
+          style={{
+            background: `radial-gradient(
+              600px circle at 
+              calc(var(--mouse-x, 0.5) * 100%) 
+              calc(var(--mouse-y, 0.5) * 100%), 
+              rgba(50, 205, 50, 0.12), 
+              transparent 50%
+            )`,
+            transition: "background 0.1s ease-out"
+          }}
+        />
+      </div>
       {children}
     </div>
-  )
+  );
 }
-

@@ -4,19 +4,20 @@ import { Button } from "@/components/ui/button"
 import { ShineBorder } from "@/components/ui/shine-border"
 import { Spotlight } from "@/components/ui/spotlight"
 import { Play, Pause } from "lucide-react"
+import { TooltipButton } from "@/components/TooltipButton"
 import Image from "next/image"
 import { useState, useRef } from "react"
 
 export function HeroSection() {
-  const [isPlaying, setIsPlaying] = useState(false)
+  const [isPlaying, setIsPlaying] = useState(true)
   const videoRef = useRef<HTMLVideoElement>(null)
 
   const togglePlay = () => {
     if (videoRef.current) {
-      if (isPlaying) {
-        videoRef.current.pause()
-      } else {
+      if (!isPlaying) {
         videoRef.current.play()
+      } else {
+        videoRef.current.pause()
       }
       setIsPlaying(!isPlaying)
     }
@@ -33,17 +34,29 @@ export function HeroSection() {
             Through Blockchain Technology
           </h1>
           <div className="flex gap-4 justify-center">
-            <Button variant="outline" className="gap-2 rounded-xl border-white/10 bg-white/5 hover:bg-white/10">
+            <TooltipButton
+              variant="outline"
+              className="gap-2 rounded-xl border-white/10 bg-white/5 hover:bg-white/10"
+              tooltipText="Coming Soon"
+            >
               Launch WebApp
-            </Button>
-            <Button variant="secondary" className="bg-white rounded-xl text-black hover:bg-gray-100 flex items-center gap-2">
+            </TooltipButton>
+            <TooltipButton
+              variant="outline"
+              className="gap-2 rounded-xl border-white/10 bg-white/5 hover:bg-white/10"
+              tooltipText="Coming Soon"
+            >
               <Image src="/google-play-logo.svg" alt="Google Play" width={20} height={20} />
               Google Play
-            </Button>
-            <Button variant="secondary" className="bg-white rounded-xl text-black hover:bg-gray-100 flex items-center gap-2">
+            </TooltipButton>
+            <TooltipButton
+              variant="outline"
+              className="gap-2 rounded-xl border-white/10 bg-white/5 hover:bg-white/10"
+              tooltipText="Coming Soon"
+            >
               <Image src="/app-store-logo.svg" alt="App Store" width={20} height={20} />
               App Store
-            </Button>
+            </TooltipButton>
           </div>
         </div>
 
@@ -72,7 +85,7 @@ export function HeroSection() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6">About ACTION Tokens</h2>
           <p className="text-gray-400 mb-8">ACTION tokens encourage consumers to take positive actions in the physical world. Connect with brands,
-          philanthropies, and organizations in the ACTIONVerse.</p>
+            philanthropies, and organizations in the ACTIONVerse.</p>
           <p className="text-gray-400 mb-8">
             ACTION tokens and associated applications exist to encourage consumers taking positive actions in the
             physical world. The tokens are demanded by brands, philanthropies, and organizations motivating and

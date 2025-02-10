@@ -43,7 +43,7 @@ export default function ExecutiveSummary() {
                         transition={{ duration: 0.5, delay: index * 0.1 }}
                     >
                         <Card
-                            className="overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2 group"
+                            className="overflow-hidden transition-all rounded-xl duration-300 hover:shadow-xl hover:-translate-y-2 group"
                             onMouseEnter={() => setHoveredIndex(index)}
                             onMouseLeave={() => setHoveredIndex(null)}
                         >

@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { TooltipButton } from "@/components/TooltipButton"
 import { CalendarDays, Users, TrendingUp } from 'lucide-react'
 import { MagicCard } from "./ui/magic-card"
 import { Input } from "@/components/ui/input"
@@ -101,7 +102,7 @@ export default function Roadmap() {
                                 <Badge variant="outline" className="text-lg font-semibold px-3 py-1">
                                     Winter 2025
                                 </Badge>
-                                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
                                     <TrendingUp className="w-6 h-6 text-primary" />
                                 </div>
                             </div>
@@ -111,15 +112,15 @@ export default function Roadmap() {
                                     <p className="text-muted-foreground mb-4">Be among the first to experience ActionVerse. Sign up for our exclusive alpha release and shape the future of digital rewards.</p>
                                     <ul className="space-y-2">
                                         <li className="flex items-start">
-                                            <span className="inline-block w-2 h-2 mt-2 mr-3 bg-primary rounded-full" />
+                                            <span className="inline-block w-2 h-2 mt-2 mr-3 bg-primary  rounded-xl" />
                                             <span className="text-sm">Early access to all features</span>
                                         </li>
                                         <li className="flex items-start">
-                                            <span className="inline-block w-2 h-2 mt-2 mr-3 bg-primary rounded-full" />
+                                            <span className="inline-block w-2 h-2 mt-2 mr-3 bg-primary rounded-xl" />
                                             <span className="text-sm">Provide valuable feedback</span>
                                         </li>
                                         <li className="flex items-start">
-                                            <span className="inline-block w-2 h-2 mt-2 mr-3 bg-primary rounded-full" />
+                                            <span className="inline-block w-2 h-2 mt-2 mr-3 bg-primary rounded-xl" />
                                             <span className="text-sm">Exclusive alpha tester rewards</span>
                                         </li>
                                     </ul>
@@ -134,7 +135,7 @@ export default function Roadmap() {
                                                 value={formData.name}
                                                 onChange={handleInputChange}
                                                 required
-                                                className="mt-1"
+                                                className="mt-1 rounded-xl"
                                             />
                                         </div>
                                         <div>
@@ -146,7 +147,7 @@ export default function Roadmap() {
                                                 value={formData.email}
                                                 onChange={handleInputChange}
                                                 required
-                                                className="mt-1"
+                                                className="mt-1 rounded-xl"
                                             />
                                         </div>
                                         <div>
@@ -157,7 +158,7 @@ export default function Roadmap() {
                                                 value={formData.location}
                                                 onChange={handleInputChange}
                                                 required
-                                                className="mt-1"
+                                                className="mt-1 rounded-xl"
                                             />
                                         </div>
                                         <Button type="submit" className="w-full mt-4" disabled={isSubmitting}>
