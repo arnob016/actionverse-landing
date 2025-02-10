@@ -69,6 +69,7 @@ export function HeroSection() {
               playsInline
               autoPlay
               muted
+              loop
             />
             <Button
               variant="outline"
