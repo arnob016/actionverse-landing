@@ -102,8 +102,8 @@ export default function TokenDistribution() {
                 <CardContent>
                     <h3 className="text-xl font-semibold mb-4">Track our expenditures:</h3>
                     <ul className="list-disc pl-5 space-y-2">
-                        <li>Actionverse Development: <Badge variant='secondary' className="">Coming Soon</Badge></li>
-                        <li>Actionverse Community: <Badge variant='secondary' className="">Coming Soon</Badge></li>
+                        <li>Actionverse Development: <Badge variant='secondary' className="">GA6RBPN6EQXFYSRRPDVAFAH576A33YF7YPHTR6KVLPC7QZBU6VUL3C2N</Badge></li>
+                        <li>Actionverse Community: <Badge variant='secondary' className="">GAQSJVWTG4HVG6QGE6PKIEXBYA6Y4U2EP2ETTPTILXPSMTOZBTQBTAYY</Badge></li>
                         <li>Ecosystem Grants: <Badge className="">GBNWMRYLYRPZ3L5UX6OIKEIHVK565IAPPFB3YIBMCNUUU4T56R2K23H4</Badge></li>
                         <li>Philanthropy: <Badge>GBKHFR3GU7VSKJEX4DSCIEMFZDANK6HGC5FMVBXDAZIYHHNC555WAARK</Badge></li>
                     </ul>
