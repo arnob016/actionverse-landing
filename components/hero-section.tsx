@@ -86,15 +86,15 @@ export function HeroSection() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6">About ACTION Tokens</h2>
           <p className="text-gray-400 mb-8">ACTION tokens encourage consumers to take positive actions in the physical world. Connect with brands,
-            philanthropies, and organizations in the ACTIONVerse.</p>
+            philanthropies, and organizations in the Actionverse.</p>
           <p className="text-gray-400 mb-8">
             ACTION tokens and associated applications exist to encourage consumers taking positive actions in the
             physical world. The tokens are demanded by brands, philanthropies, and organizations motivating and
-            marketing these actions within the ACTIONVerse application. They need tokens to provide incentives as well
+            marketing these actions within the Actionverse application. They need tokens to provide incentives as well
             as pay application fees.
           </p>
           <p className="text-gray-400">
-            The ACTIONVerse will empower the connection of organizations to individuals through physical actions.
+            The Actionverse will empower the connection of organizations to individuals through physical actions.
             Proprietary augmented reality and token-gated technology enables incredibly unique use cases. Users will be
             enabled to collect various digital goods by physically traveling and searching locations as well as
             completing tasks. They can then redeem these collectibles for unique digital and physically (some

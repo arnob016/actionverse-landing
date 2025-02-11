@@ -11,17 +11,17 @@ const Terms = () => {
         <CardContent className="p-6">
           <h1 className="text-4xl font-bold mb-6 text-center">Terms and Conditions</h1>
           <p className="text-gray-400 mb-4">
-            Welcome to ActionVerse! By using our platform, you agree to comply with and be bound by the following terms and conditions.
+            Welcome to Actionverse! By using our platform, you agree to comply with and be bound by the following terms and conditions.
           </p>
 
           <h2 className="text-2xl font-semibold mt-6 mb-2">1. Acceptance of Terms</h2>
           <p className="text-gray-400">
-            By accessing or using ActionVerse, you agree to abide by these terms. If you do not agree, please do not use our platform.
+            By accessing or using Actionverse, you agree to abide by these terms. If you do not agree, please do not use our platform.
           </p>
 
           <h2 className="text-2xl font-semibold mt-6 mb-2">2. Use of Services</h2>
           <p className="text-gray-400">
-            ActionVerse provides a digital platform for collecting rewards, interacting with AR elements, and engaging with brands. Users must not misuse or exploit these services in any unlawful manner.
+            Actionverse provides a digital platform for collecting rewards, interacting with AR elements, and engaging with brands. Users must not misuse or exploit these services in any unlawful manner.
           </p>
 
           <h2 className="text-2xl font-semibold mt-6 mb-2">3. User Accounts</h2>
@@ -31,17 +31,17 @@ const Terms = () => {
 
           <h2 className="text-2xl font-semibold mt-6 mb-2">4. Intellectual Property</h2>
           <p className="text-gray-400">
-            All content, trademarks, and digital assets within ActionVerse remain the property of their respective owners. Users may not reproduce or distribute content without permission.
+            All content, trademarks, and digital assets within Actionverse remain the property of their respective owners. Users may not reproduce or distribute content without permission.
           </p>
 
           <h2 className="text-2xl font-semibold mt-6 mb-2">5. Limitation of Liability</h2>
           <p className="text-gray-400">
-            ActionVerse is not liable for any direct or indirect damages resulting from the use of the platform.
+            Actionverse is not liable for any direct or indirect damages resulting from the use of the platform.
           </p>
 
           <h2 className="text-2xl font-semibold mt-6 mb-2">6. Changes to Terms</h2>
           <p className="text-gray-400">
-            ActionVerse reserves the right to update these terms at any time. Continued use of the platform implies acceptance of any changes.
+            Actionverse reserves the right to update these terms at any time. Continued use of the platform implies acceptance of any changes.
           </p>
 
           <div className="text-center mt-8">

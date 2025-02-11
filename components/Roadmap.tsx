@@ -93,7 +93,7 @@ export default function Roadmap() {
     return (
         <section id="roadmap" className="py-16 ">
             <div className="max-w-6xl mx-auto ">
-                <h2 className="text-4xl font-bold mb-12 text-center">ActionVerse Roadmap</h2>
+                <h2 className="text-4xl font-bold mb-12 text-center">Actionverse Roadmap</h2>
                 <div className="flex flex-wrap gap-8 md:grid md:grid-cols-2  w-full">
 
                     <MagicCard className="  lg:max-w-[60rem] xl:max-w-[70rem] overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2 col-span-2 lg:col-span-3">
@@ -109,7 +109,7 @@ export default function Roadmap() {
                             <div className="grid md:grid-cols-2 gap-8 ">
                                 <div>
                                     <h3 className="text-2xl font-semibold mb-4">Limited Alpha Release</h3>
-                                    <p className="text-muted-foreground mb-4">Be among the first to experience ActionVerse. Sign up for our exclusive alpha release and shape the future of digital rewards.</p>
+                                    <p className="text-muted-foreground mb-4">Be among the first to experience Actionverse. Sign up for our exclusive alpha release and shape the future of digital rewards.</p>
                                     <ul className="space-y-2">
                                         <li className="flex items-start">
                                             <span className="inline-block w-2 h-2 mt-2 mr-3 bg-primary  rounded-xl" />

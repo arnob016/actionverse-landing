@@ -23,7 +23,7 @@ const summaryItems = [
     },
     {
         icon: Sparkles,
-        title: "ActionVerse",
+        title: "Actionverse",
         description: "Utilize augmented reality and token-gated technology for unique use cases."
     }
 ]
