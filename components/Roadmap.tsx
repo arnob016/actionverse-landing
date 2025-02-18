@@ -28,7 +28,7 @@ const roadmapData = [
         season: 'Fall 2025',
         icon: Users,
         items: [
-            'Community governance focused brand adoption and philanthropy',
+            'Community governance focused Organization adoption and philanthropy',
             'Action Metaverse',
             'Social enhancements',
             'Improved offer and redemption UX',
