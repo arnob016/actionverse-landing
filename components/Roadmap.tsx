@@ -72,6 +72,7 @@ export default function Roadmap() {
                 description: "You've been signed up for the alpha release.",
                 variant: "default",
                 duration: 5000,
+                className: "bg-gray-700 text-black border border-gray-200",
             })
 
             // Reset form after submission
@@ -161,7 +162,7 @@ export default function Roadmap() {
                                                 className="mt-1 rounded-xl"
                                             />
                                         </div>
-                                        <Button type="submit" className="w-full mt-4" disabled={isSubmitting}>
+                                        <Button type="submit" className="w-full mt-4 bg-gray-700 rounded-xl" disabled={isSubmitting}>
                                             {isSubmitting ? 'Signing Up...' : 'Sign Up for Alpha'}
                                         </Button>
                                     </form>
