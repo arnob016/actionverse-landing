@@ -24,16 +24,15 @@ export function HeroSection() {
   }
 
   return (
-    <Spotlight className="relative pt-28 pb-8
-     overflow-hidden">
-      <div className="max-w-6xl mx-auto px-6">
+    <Spotlight className="relative pt-28 pb-8 overflow-hidden">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-8">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 tracking-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4 tracking-tight">
             Empowering Positive Actions
             <br />
             Through Blockchain Technology
           </h1>
-          <div className="flex gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <TooltipButton
               variant="outline"
               className="gap-2 rounded-xl border-white/10 bg-white/5 hover:bg-white/10"
@@ -82,9 +81,9 @@ export function HeroSection() {
           </div>
         </ShineBorder>
       </div>
-      <section className="py-16 px-6">
+      <section className="py-16 px-4 sm:px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6">About ACTION Tokens</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6">About ACTION Tokens</h2>
           <p className="text-gray-400 mb-8">ACTION tokens encourage consumers to take positive actions in the physical world. Connect with brands,
             philanthropies, and organizations in the Actionverse.</p>
           <p className="text-gray-400 mb-8">
@@ -105,4 +104,3 @@ export function HeroSection() {
     </Spotlight>
   )
 }
-
