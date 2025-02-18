@@ -84,7 +84,7 @@ export function HeroSection() {
       <section className="py-16 px-4 sm:px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-2xl sm:text-3xl font-bold mb-6">About ACTION Tokens</h2>
-          <p className="text-gray-400 mb-8">ACTION tokens encourage consumers to take positive actions in the physical world. Connect with brands,
+          <p className="text-gray-400 mb-8">ACTION tokens encourage consumers to take positive actions in the physical world. Connect with organizations,
             philanthropies, and organizations in the Actionverse.</p>
           <p className="text-gray-400 mb-8">
             ACTION tokens and associated applications exist to encourage consumers taking positive actions in the
