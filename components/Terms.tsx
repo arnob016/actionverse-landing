@@ -21,7 +21,7 @@ const Terms = () => {
 
           <h2 className="text-2xl font-semibold mt-6 mb-2">2. Use of Services</h2>
           <p className="text-gray-400">
-            Actionverse provides a digital platform for collecting rewards, interacting with AR elements, and engaging with brands. Users must not misuse or exploit these services in any unlawful manner.
+            Actionverse provides a digital platform for collecting rewards, interacting with AR elements, and engaging with organizations. Users must not misuse or exploit these services in any unlawful manner.
           </p>
 
           <h2 className="text-2xl font-semibold mt-6 mb-2">3. User Accounts</h2>
