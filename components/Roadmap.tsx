@@ -69,7 +69,7 @@ export default function Roadmap() {
                 description: "You've been signed up for the alpha release.",
                 variant: "default",
                 duration: 5000,
-                className: "bg-gray-700 text-black border border-gray-200",
+                className: "",
             })
 
             // Reset form after submission
