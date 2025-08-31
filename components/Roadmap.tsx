@@ -9,9 +9,10 @@ import { MagicCard } from "./ui/magic-card"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { Label } from "@/components/ui/label"
-import { storage } from '@/lib/firebase'
+import { db, storage } from '@/lib/firebase'
 import { ref, uploadString } from 'firebase/storage'
 import { toast } from '@/hooks/use-toast'
+import { addDoc, collection } from 'firebase/firestore'
 
 const roadmapData = [
     {
@@ -28,7 +29,7 @@ const roadmapData = [
         season: 'Fall 2025',
         icon: Users,
         items: [
-            'Community governance focused brand adoption and philanthropy',
+            'Community governance focused organization adoption and philanthropy',
             'Action Metaverse',
             'Social enhancements',
             'Improved offer and redemption UX',
@@ -55,29 +56,26 @@ export default function Roadmap() {
         setIsSubmitting(true)
 
         try {
-            const signupData = JSON.stringify({
+            const signupData = {
                 ...formData,
-                timestamp: new Date().toISOString()
-            })
+                timestamp: new Date().toISOString(),
+            }
 
-            const fileName = `alphaSignups/${formData.email}-${Date.now()}.json`
-            const storageRef = ref(storage, fileName)
-
-            await uploadString(storageRef, signupData, 'raw', {
-                contentType: 'application/json',
-            })
+            // Add a new document to the "alphaSignups" collection
+            await addDoc(collection(db, "alphaSignups"), signupData)
 
             toast({
                 title: "Success!",
                 description: "You've been signed up for the alpha release.",
                 variant: "default",
                 duration: 5000,
+                className: "",
             })
 
             // Reset form after submission
-            setFormData({ name: '', email: '', location: '' })
+            setFormData({ name: "", email: "", location: "" })
         } catch (error) {
-            console.error('Error submitting form:', error)
+            console.error("Error submitting form:", error)
             toast({
                 title: "Error",
                 description: "There was a problem signing you up. Please try again.",
@@ -88,7 +86,6 @@ export default function Roadmap() {
             setIsSubmitting(false)
         }
     }
-
 
     return (
         <section id="roadmap" className="py-16 ">
@@ -161,7 +158,7 @@ export default function Roadmap() {
                                                 className="mt-1 rounded-xl"
                                             />
                                         </div>
-                                        <Button type="submit" className="w-full mt-4" disabled={isSubmitting}>
+                                        <Button type="submit" className="w-full mt-4 bg-gray-700 rounded-xl" disabled={isSubmitting}>
                                             {isSubmitting ? 'Signing Up...' : 'Sign Up for Alpha'}
                                         </Button>
                                     </form>

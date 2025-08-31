@@ -8,16 +8,16 @@ import { Badge } from "./ui/badge"
 
 const data = [
     { name: 'Development & Governance', value: 50, color: 'hsl(221.2, 83.2%, 53.3%)' },
-    { name: 'Brand Support', value: 20, color: 'hsl(262, 83%, 58%)' },
+    { name: 'Organization Support', value: 20, color: 'hsl(262, 83%, 58%)' },
     { name: 'Community Distribution', value: 20, color: 'hsl(199, 89%, 48%)' },
     { name: 'Philanthropy', value: 10, color: 'hsl(346, 87%, 48%)' },
 ]
 
 const areaChartData = [
-    { name: '2025 Q1', Development: 40, Brand: 15, Community: 15, Philanthropy: 5 },
-    { name: '2025 Q2', Development: 45, Brand: 18, Community: 18, Philanthropy: 7 },
-    { name: '2025 Q3', Development: 48, Brand: 20, Community: 20, Philanthropy: 9 },
-    { name: '2025 Q4', Development: 50, Brand: 20, Community: 20, Philanthropy: 10 },
+    { name: '2025 Q1', Development: 40, Organization: 15, Community: 15, Philanthropy: 5 },
+    { name: '2025 Q2', Development: 45, Organization: 18, Community: 18, Philanthropy: 7 },
+    { name: '2025 Q3', Development: 48, Organization: 20, Community: 20, Philanthropy: 9 },
+    { name: '2025 Q4', Development: 50, Organization: 20, Community: 20, Philanthropy: 10 },
 ]
 
 
@@ -87,7 +87,7 @@ export default function TokenDistribution() {
                                     }}
                                 >
                                     <Area type="monotone" dataKey="Development" stackId="1" stroke={data[0].color} fill={data[0].color} />
-                                    <Area type="monotone" dataKey="Brand" stackId="1" stroke={data[1].color} fill={data[1].color} />
+                                    <Area type="monotone" dataKey="Organization" stackId="1" stroke={data[1].color} fill={data[1].color} />
                                     <Area type="monotone" dataKey="Community" stackId="1" stroke={data[2].color} fill={data[2].color} />
                                     <Area type="monotone" dataKey="Philanthropy" stackId="1" stroke={data[3].color} fill={data[3].color} />
                                     <Tooltip />

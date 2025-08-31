@@ -6,6 +6,7 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { Toast } from "@/components/ui/toast"
 import { Toaster } from "@/components/ui/toaster"
+import { AuthProvider } from "@/components/Provider/AuthProvider"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -22,12 +23,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} bg-black text-white antialiased`}>
+        <AuthProvider>
 
-        <Header />
-        {children}
-        <Footer />
-        <Toaster />
+          <Header />
 
+          {children}
+
+          <Footer />
+          <Toaster />
+
+        </AuthProvider>
       </body>
     </html>
   )

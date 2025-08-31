@@ -18,7 +18,7 @@ const summaryItems = [
     },
     {
         icon: Building,
-        title: "Brand Integration",
+        title: "Organization Integration",
         description: "Connect organizations with individuals through innovative physical actions and tasks."
     },
     {
